@@ -1,0 +1,20 @@
+{
+  "name": "Ptt Media Preview",
+  "version": "1.0.0",
+  "description": "Easy preview of Ptt media links",
+  "permissions": [
+    "declarativeNetRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.imgur.com/*",
+    "https://www.ptt.cc/*",
+    "https://term.ptt.cc/"
+  ],
+  "background": {
+    "service_worker": "entrypoints/background.js"
+  },
+  "action": {
+    "default_title": "Header Modifier"
+  }
+}
